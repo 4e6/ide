@@ -38,7 +38,8 @@ wasm-bindgen = { version = "=0.2.58" , features = ["nightly"]      }
 
 # TODO: should be behind a flag, as the `nalgebra` package is pretty big and this crate would be
 #       also useful for projects which do not require `nalgebra`.
-nalgebra     = "0.21.1"
+nalgebra     = { version = "0.21.1", features = ["serde-serialize"] }
+serde        = { version = "1.0"     , features = ["derive"]        }
 
 [dependencies.web-sys]
 version = "0.3.4"
