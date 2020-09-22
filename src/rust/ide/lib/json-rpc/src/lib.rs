@@ -36,5 +36,5 @@ pub mod constants {
     use std::time::Duration;
 
     /// The default timeout for all responses.
-    pub const TIMEOUT:Duration = Duration::from_secs(10);
+    pub const TIMEOUT:Duration = Duration::from_secs(60);
 }
