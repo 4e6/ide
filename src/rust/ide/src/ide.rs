@@ -180,6 +180,7 @@ impl IdeInitializer {
             (logger,&project_manager,&project_name).await?;
         let project_manager = Rc::new(project_manager);
         let project         = Self::open_project(logger,project_manager,project_metadata).await?;
+        // ensogl::system::web::sleep(std::time::Duration::from_secs(10)).await;
         Ok(ProjectView::new(logger,project).await?)
     }
 
